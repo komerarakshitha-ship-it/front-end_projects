@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f6fb">
+    <title>Verify your number | Luma</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+        <section class="auth-card" aria-labelledby="page-title">
+            <a class="brand" href="form.html" aria-label="Login home">
+                <span class="brand-mark" aria-hidden="true">L</span>
+                <span>luma<span class="brand-dot">.</span></span>
+            </a>
+            <div class="step-indicator" aria-label="Step 2 of 3">
+                <span class="step complete"></span><span class="step active"></span><span class="step"></span>
+            </div>
+            <div class="illustration" aria-hidden="true">✉</div>
+            <p class="eyebrow">ONE MORE STEP</p>
+            <h1 id="page-title">Verify your number</h1>
+            <p class="subtitle">Enter the 4-digit code to continue.</p>
+
+            <form class="auth-form" action="password.html" method="post">
+                <div class="field">
+                    <label for="otp">Verification code</label>
+                    <input class="otp-input" id="otp" name="otp" type="text" placeholder="••••" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{4}" minlength="4" title="Enter the 4-digit code" required>
+                    <small class="field-hint">Demo only — no code is sent or verified.</small>
+                </div>
+                <button class="primary-button" type="submit">Verify code <span aria-hidden="true">→</span></button>
+            </form>
+
+            <p class="switch-prompt"><a href="form.html">← Back to login</a></p>
+            <p class="demo-note">Demo interface — do not enter a real verification code.</p>
+        </section>
+        <footer class="page-footer">Simple, secure access to your account.</footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f6fb">
+    <title>Log in </title>
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+        <section class="auth-card" aria-labelledby="page-title">
+            <a class="brand" href="form.html" aria-label="Login home">
+                <span class="brand-mark" aria-hidden="true">L</span>
+                <span>luma<span class="brand-dot">.</span></span>
+            </a>
+            <div class="step-indicator" aria-label="Step 1 of 3">
+                <span class="step active"></span><span class="step"></span><span class="step"></span>
+            </div>
+            <p class="eyebrow">WELCOME BACK</p>
+            <h1 id="page-title">Log in to your account</h1>
+            <p class="subtitle">Enter your email and phone number to continue.</p>
+
+            <form class="auth-form" action="Otp.html" method="post">
+                <div class="field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone number</label>
+                    <input id="phone" name="phonenumber" type="tel" placeholder="10-digit mobile number" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" title="Enter a 10-digit phone number" required>
+                    <small class="field-hint">Use 10 digits, with no spaces or symbols.</small>
+                </div>
+                <button class="primary-button" type="submit">Continue <span aria-hidden="true">→</span></button>
+            </form>
+
+            <p class="switch-prompt">New here? <a href="account.html">Create an account</a></p>
+            <p class="demo-note">Demo interface — no verification message will be sent.</p>
+        </section>
+        <footer class="page-footer">Simple, secure access to your account.</footer>
+    </main>
+</body>
+</html>
